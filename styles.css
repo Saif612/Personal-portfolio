@@ -1,0 +1,395 @@
+:root {
+  --bg: #1A1B26;
+  --text: rgba(255, 255, 255, 0.8);
+  --primary: blue;
+  --secondary: rgba(0, 0, 255, 0,8);
+  --container: #1A1E48;
+  --link-color: #626FFF;
+  --html-color: red;
+  --css-color: #264de4;
+}
+
+@media(prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth; 
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--link-color) var(--bg);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  width: 100%;
+  min-height: 100vh;
+  /* overflow-x: hidden; */
+}
+
+/* constants */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.hero {
+  background-image: url("./assets/lofi-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 55px;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h3 {
+  vertical-align: center;
+}
+
+#profile-icon {
+  width: 30px;
+}
+
+#logo-text {
+  width: 200px;
+  position: relative;
+  left: -15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-item a {
+  color: var(--text);
+  text-decoration: none;
+  vertical-align: center;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+
+.top {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-top {
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.inner-top h1 {
+  font-size: 2.5em;
+}
+
+main {
+  padding-top: 100px;
+}
+
+h2, main p, main ol, main li, main ul {
+  width: 100%;
+}
+
+main p, ol, main li {
+  margin-left: 30px;
+  width: calc(100% - 30px);
+}
+
+main section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px; 
+  display: flex; 
+  flex-direction: column;
+  gap: 7px;
+}
+
+.section-heading {
+}
+
+a:not(nav-item a) {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.technologies-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  width: 100%;
+}
+
+.technology-item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.technology-item i {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  position: relative;
+  bottom: -3px;
+}
+
+.html, .css, .python, .selenium {
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.html {
+  background-color: var(--html-color);
+}
+
+.css {
+  background-color: var(--css-color);
+}
+
+.python {
+  background-color: black;
+}
+
+.selenium {
+  background-color: purple;
+}
+
+.html-icon, .css-icon {
+  background-color: var(--container);
+}
+
+.html-icon {
+  color: var(--html-color);
+}
+
+.css-icon {
+  color: var(--css-color);
+}
+
+.projects-container {
+  width: 100%;
+  margin-left: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.project {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: var(--container);
+}
+
+.project-name {
+  font-size: 1em;
+  max-width: 275px;
+  text-align: center;
+  width: 100%;
+}
+
+.project-image {
+  width: 275px;
+  margin-top:  auto;
+  margin-bottom: auto;
+  border-radius: 5px;
+}
+
+.tags-and-links {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.project-tags, .project-links {
+  list-style: none;
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.project-tag, .project-link {
+  margin-left: 0;
+  width: fit-content;
+  font-size: 0.8em;
+}
+
+.project-tag i, .project-link a {
+  color: #fff;
+}
+
+.project-tag i, .project-link i {
+  font-size: 1rem;
+}
+
+.contact-me {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  margin-left: 0;
+}
+
+.contact-item {
+  width: fit-content;
+  margin-left: 0;
+  font-size: 1.5em;
+}
+
+.contact-item i, .contact-item a {
+  color: #fff;
+}
+
+footer {
+  margin-top: 25px;
+  border-top: 3px solid white;
+  padding: 25px;
+}
+
+address {
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
+@media(max-width: 768px) {
+  nav ul {
+    display: none; 
+  }
+  .inner-top h1 {
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font-size: 0.9em;
+  }
+  
+  main section {
+    width: 100%;
+    padding: 15px;
+  }
+
+  main p, main ol {
+    width: calc(100% - 10px);
+    margin-left: 10px;
+  }
+
+  main li {
+    margin-left: 15px;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+
+  #profile-icon {
+    width: 20px;
+  }
+
+  .logo h3 {
+    font-size: 0.8em;
+  }
+  main {
+    padding-top: 35px;
+  }
+}
+
+@media(max-width: 556px) {
+  .projects-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .project {
+    padding: 15px;
+    width: 100%;
+  }
+  .project-image {
+    width: 200px;
+  }
+
+  .project-title {
+    max-width: 200px;
+  }
+
+  .inner-top {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .inner-top h1 {
+    font-size: 1.3rem;
+  }
+
+  .section-heading, .project-name {
+    font-size: 0.9em;
+  }
+
+  p, li, .project-tag, .project-link {
+    font-size: 0.7rem;
+  }
+
+  .technology-item {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .technology-item i {
+    font-size: 2rem;
+    bottom: -2px;
+  }
+}
