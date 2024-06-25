@@ -7,7 +7,7 @@
 
 ![image](https://github.com/WilliamFerns1/personal_portfolio/assets/141557971/43d99ffe-e566-46e7-9ff7-6e295c2cfd9b)
 
-![personal-portfolio]((https://github.com/shubhamvrs/Personal-portfolio))
+![personal-portfolio]((https://github.com/Saif612/Personal-portfolio))
 
 A simple personal portfolio, made with HTML and CSS, showcasing my recent projects and skills. Feel free to check <a href="https://personal-portfolio-bay-psi.vercel.app/" target="_blank">my portfolio</a> out, and give feedback on what I can improve if you like. If you want to see a quick showcase video of the portfolio, <a href="https://www.youtube.com/watch?v=DE21IevfJ7A" target="_blank">click here</a>. 
 
@@ -42,7 +42,7 @@ If you are someone that are looking to hire a developer, whether it is freelanci
     <a target="_blank" href="https://twitter.com/shubhamvrs">Twitter: shubhamvrs</a>  
   </li>
   <li>
-    <p>Discord: shubhamvrs</p>
+    <p>Discord: -</p>
   </li>
 </ul>
 
